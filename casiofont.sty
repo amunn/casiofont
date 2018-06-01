@@ -1,0 +1,122 @@
+%
+% casiofont.sty
+%
+% Copyright 2018 by Alan Munn amunn@msu.edu
+%
+% This package may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This package has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this package is Alan Munn.
+%
+% This package consists of the files casiofont.sty and
+% documentation files casiofont.tex, casiofont.pdf and README
+%
+% Version 1.0 2018/05/31
+%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{casiofont}[2018/05/31 v1.0 Casio Calculator Font]
+\RequirePackage{iftex}
+\ifPDFTeX
+ \PackageError{casiofont}{This package requires LuaTeX or XeTeX}{Please use one of these engines to compile your document.}
+\else
+\RequirePackage{fontspec}
+\newfontface\casio[Scale=MatchUppercase]{CASIOClassWiz}
+\DeclareTextFontCommand{\textcasio}{\casio}
+\newcommand*{\Shift}{{\normalfont\casio q}}
+\newcommand*{\Alpha}{{\normalfont\casio Q}}
+\newcommand*{\UpArrow}{{\normalfont\casio E}}
+\newcommand*{\LeftArrow}{{\normalfont\casio !}}
+\newcommand*{\DownArrow}{{\normalfont\casio R}}
+\newcommand*{\RightArrow}{{\normalfont\casio\$}}
+\newcommand*{\Setup}{{\normalfont\casio L}}
+\newcommand*{\Menu}{{\normalfont\casio w}}
+\newcommand*{\UnknownA}{{\normalfont\casio t}}
+\newcommand*{\UnknownB}{{\normalfont\casio |}}
+\newcommand*{\Optn}{{\normalfont\casio T}}
+\newcommand*{\LineFrac}{{\normalfont\casio `{}}}
+\newcommand*{\Calc}{{\normalfont\casio r}}
+\newcommand*{\casioY}{{\normalfont\casio @}}
+\newcommand*{\dydx}{{\normalfont\casio Y}}
+\newcommand*{\Abs}{{\normalfont\casio e}}
+\newcommand*{\casioSum}{{\normalfont\casio I}}
+\newcommand*{\casioProd}{{\normalfont\casio \}}}
+\newcommand*{\casioIntegral}{{\normalfont\casio y}}
+\newcommand*{\Simp}{{\normalfont\casio\~{}}}
+\newcommand*{\casioX}{{\normalfont\casio [}}
+\newcommand*{\casioOdot}{{\normalfont\casio ;}}
+\newcommand*{\casioObar}{{\normalfont\casio :}}
+\newcommand*{\casioDblParen}{{\normalfont\casio ]}}
+\newcommand*{\FracMult}{{\normalfont\casio A}}
+\newcommand*{\Frac}{{\normalfont\casio a}}
+\newcommand*{\CubeRoot}{{\normalfont\casio S}}
+\newcommand*{\SquareRoot}{{\normalfont\casio s}}
+\newcommand*{\CubeParen}{{\normalfont\casio '}}
+\newcommand*{\Cube}{{\normalfont\casio D}}
+\newcommand*{\nRoot}{{\normalfont\casio F}}
+\newcommand*{\nExp}{{\normalfont\casio\^{}}}
+\newcommand*{\nTen}{{\normalfont\casio G}}
+\newcommand*{\eExp}{{\normalfont\casio H}}
+\newcommand*{\nLog}{{\normalfont\casio i}}
+\newcommand*{\casioLog}{{\normalfont\casio g}}
+\newcommand*{\casioLn}{{\normalfont\casio h}}
+\newcommand*{\logParen}{{\normalfont\casio c}}
+\newcommand*{\divR}{{\normalfont\casio -}}
+\newcommand*{\Factorial}{{\normalfont\casio\%}}
+\newcommand*{\InverseSin}{{\normalfont\casio <}}
+\newcommand*{\minusParen}{{\normalfont\casio z}}
+\newcommand*{\DegRadGrad}{{\normalfont\casio x}}
+\newcommand*{\Inverse}{{\normalfont\casio u}}
+\newcommand*{\InverseParen}{{\normalfont\casio /}}
+\newcommand*{\Sen}{{\normalfont\casio\_{}}}
+\newcommand*{\casioSin}{{\normalfont\casio j}}
+\newcommand*{\InverseCos}{{\normalfont\casio >}}
+\newcommand*{\InverseTan}{{\normalfont\casio ?}}
+\newcommand*{\casioCos}{{\normalfont\casio k}}
+\newcommand*{\casioTan}{{\normalfont\casio l}}
+\newcommand*{\Sto}{{\normalfont\casio J}}
+\newcommand*{\BackArrow}{{\normalfont\casio X}}
+\newcommand*{\iParen}{{\normalfont\casio U}}
+\newcommand*{\angleParen}{{\normalfont\casio Z}}
+\newcommand*{\casioAbs}{{\normalfont\casio f}}
+\newcommand*{\Eng}{{\normalfont\casio b}}
+\newcommand*{\casioLParen}{{\normalfont\casio (}}
+\newcommand*{\casioRParen}{{\normalfont\casio )}}
+\newcommand*{\CommaParen}{{\normalfont\casio ,}}
+\newcommand*{\MixedFrac}{{\normalfont\casio N}}
+\newcommand*{\switchMixedFrac}{{\normalfont\casio n}}
+\newcommand*{\Mminus}{{\normalfont\casio V}}
+\newcommand*{\Mplus}{{\normalfont\casio m}}
+\newcommand*{\Del}{{\normalfont\casio o}}
+\newcommand*{\Times}{{\normalfont\casio O}}
+\newcommand*{\Plus}{{\normalfont\casio +}}
+\newcommand*{\casioAC}{{\normalfont\casio C}}
+\newcommand*{\Divide}{{\normalfont\casio P}}
+\newcommand*{\Minus}{{\normalfont\casio p}}
+\newcommand*{\casioComma}{{\normalfont\casio\#}}
+\newcommand*{\casioDot}{{\normalfont\casio .}}
+\newcommand*{\casioPi}{{\normalfont\casio\{}}
+\newcommand*{\xTenx}{{\normalfont\casio K}}
+\newcommand*{\Percent}{{\normalfont\casio\&}}
+\newcommand*{\Ans}{{\normalfont\casio M}}
+\newcommand*{\Exe}{{\normalfont\casio B}}
+\newcommand*{\Sim}{{\normalfont\casio "}}
+\newcommand*{\Equal}{{\normalfont\casio =}}
+\newcommand*{\Zero}{{\normalfont\casio 0}}
+\newcommand*{\One}{{\normalfont\casio 1}}
+\newcommand*{\Two}{{\normalfont\casio 2}}
+\newcommand*{\Three}{{\normalfont\casio 3}}
+\newcommand*{\Four}{{\normalfont\casio 4}}
+\newcommand*{\Five}{{\normalfont\casio 5}}
+\newcommand*{\Six}{{\normalfont\casio 6}}
+\newcommand*{\Seven}{{\normalfont\casio 7}}
+\newcommand*{\Eight}{{\normalfont\casio 8}}
+\newcommand*{\Nine}{{\normalfont\casio 9}}
+\fi
+\endinput

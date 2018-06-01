@@ -1,0 +1,193 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[sf,small]{titlesec}
+\usepackage{titling}
+\setlength{\droptitle}{-.5in}
+\usepackage{caption}
+\usepackage{casiofont}
+\newcommand\csdisplay[1]{{\ttfamily\textbackslash#1}}
+\usepackage{array}
+\usepackage{collcell}
+\newcolumntype{L}{>{\collectcell\csdisplay}l<{\endcollectcell}}
+\newcolumntype{C}{>{\casio}l}
+\newenvironment{fonttable}{\begin{center}}{\end{center}}
+\setlength{\extrarowheight}{3pt}
+\usepackage[colorlinks]{hyperref}
+\title{The \texttt{casiofont} package}
+\author{Alan Munn\\\url{amunn@msu.edu}}
+\date{Version 1.0\\May 31, 2018}
+\begin{document}
+\maketitle
+This package provides support for the \href{https://edu.casio.com/forteachers/er/fontsets/index.php}{Casio ClassWiz} font, available from the Casio web site.  The font itself is \emph{not} included in the distribution.
+The package requires compilation with XeLaTeX or LuaLaTeX.
+\begin{fonttable}
+\captionof{table}{Calculator Functions}
+\begin{tabular}{LCLCLC}
+casioAC  &  \casioAC   &
+Alpha  &  \Alpha &
+Ans  &  \Ans  \\
+Calc  &  \Calc   &
+casioAC  &  \casioAC   &
+Eng  &  \Eng   \\
+LineFrac  &  \LineFrac   &
+Menu  &  \Menu   &
+MixedFrac  &  \MixedFrac   \\
+Mminus  &  \Mminus   &
+Mplus  &  \Mplus   &
+Optn  &  \Optn  \\
+Setup  &  \Setup   &
+Simp  &  \Simp   &
+Sto  &  \Sto 
+\end{tabular}
+\end{fonttable}
+\begin{fonttable}
+
+\captionof{table}{Movement and arrows}
+\begin{tabular}{LCLCLC}
+BackArrow  &  \BackArrow   &
+DownArrow  &  \DownArrow   &
+LeftArrow  &  \LeftArrow  \\
+RightArrow  &  \RightArrow  &
+UpArrow  &  \UpArrow &
+Shift  &  \Shift   \\
+Del  &  \Del   
+\end{tabular}
+\end{fonttable}
+
+\begin{fonttable}
+\captionof{table}{Mathematical Functions}
+\begin{tabular}{LCLCLC}
+Abs  &  \Abs   &
+casioCos  &  \casioCos   \\
+casioLn  &  \casioLn   &
+casioLog  &  \casioLog   &
+casioSin  &  \casioSin  \\
+casioTan  &  \casioTan   &
+InverseCos  &  \InverseCos   &
+InverseSin & \InverseSin \\
+InverseTan  &  \InverseTan   &
+logParen  &  \logParen   &
+Sen  &  \Sen
+\end{tabular}
+\end{fonttable}
+
+\begin{fonttable}
+\captionof{table}{Calculus}
+\begin{tabular}{LCLCLC}
+casioIntegral  &  \casioIntegral   &
+casioProd  &  \casioProd   &
+casioSum  &  \casioSum   \\
+dydx  &  \dydx  
+\end{tabular}
+\end{fonttable}
+
+\begin{fonttable}
+\captionof{table}{Roots and Exponents}
+\begin{tabular}{LCLCLC}
+Cube  &  \Cube   &
+CubeParen  &  \CubeParen   &
+CubeRoot  &  \CubeRoot   \\
+eExp  &  \eExp   &
+nExp  &  \nExp   &
+nLog  &  \nLog   \\
+nRoot  &  \nRoot   &
+nTen  &  \nTen   &
+SquareRoot  &  \SquareRoot  
+\end{tabular}
+\end{fonttable}
+
+\begin{fonttable}
+\captionof{table}{Misc Math Functions}
+\begin{tabular}{LCLCLC}
+Factorial  &  \Factorial   &
+Inverse  &  \Inverse   &
+InverseParen  &  \InverseParen   \\
+xTenx  &  \xTenx   &
+divR  &  \divR  
+\end{tabular}
+\end{fonttable}
+
+\begin{fonttable}
+\captionof{table}{Basic Math Operators}
+\begin{tabular}{LCLCLC}
+Divide  &  \Divide   &
+Equal  &  \Equal  &
+Minus  &  \Minus   \\
+Percent  &  \Percent   &
+Plus  &  \Plus   &
+Sim  &  \Sim   \\
+Times  &  \Times 
+\end{tabular}
+\end{fonttable}
+
+\begin{fonttable}
+
+\captionof{table}{Variables and constants}
+\begin{tabular}{LCLCLCLC}
+casioPi  &  \casioPi   &
+casioX  &  \casioX   &
+casioY  &  \casioY   &
+iParen  &  \iParen  
+\end{tabular}
+\end{fonttable}
+\begin{fonttable}
+
+\captionof{table}{Other Symbols}
+\begin{tabular}{LCLCLC}
+InverseParen  &  \InverseParen   &
+angleParen  &  \angleParen   &
+casioComma  &  \casioComma   \\
+casioDblParen  &  \casioDblParen   &
+casioDot  &  \casioDot   &
+casioLParen  &  \casioLParen   \\
+casioObar  &  \casioObar   &
+casioOdot  &  \casioOdot   &
+casioRParen  &  \casioRParen   \\
+CommaParen  &  \CommaParen   &
+DegRadGrad  &  \DegRadGrad  
+\end{tabular}
+\end{fonttable}
+
+\begin{fonttable}
+
+\captionof{table}{Fractions}
+\begin{tabular}{LCLC}
+Frac  &	 \Frac &FracMult &	 \FracMult 
+\end{tabular}
+\end{fonttable}
+
+
+
+\begin{fonttable}
+
+\captionof{table}{Digits}
+\begin{tabular}{LCLCLC}
+Zero  &  \Zero   &
+One  &  \One   &
+Two  &  \Two  \\
+Three  &  \Three   &
+Four  &  \Four   &
+Five  &  \Five   \\
+Six  &  \Six   &
+Seven  &  \Seven   &
+Eight  &  \Eight  \\
+Nine  &  \Nine  
+\end{tabular}
+\end{fonttable}
+
+\begin{fonttable}
+
+\captionof{table}{Unknown}
+\begin{tabular}{LCLC}
+UnknownA 	& \UnknownA &UnknownB 	 \UnknownB 
+\end{tabular}
+\end{fonttable}
+
+\clearpage
+\begin{fonttable}
+\captionof{table}{Alphabetical List}
+
+\begin{tabular}{LCLCLC}
+Abs & \Abs &Alpha & \Alpha &angleParen & \angleParen\\Ans & \Ans &BackArrow & \BackArrow &Calc & \Calc \\casioAbs & \casioAbs &casioAC & \casioAC &casioComma & \casioComma \\casioCos & \casioCos &casioDblParen & \casioDblParen &casioDot & \casioDot \\casioIntegral & \casioIntegral &casioLn & \casioLn &casioLog & \casioLog \\casioLParen & \casioLParen &casioObar & \casioObar &casioOdot & \casioOdot \\casioPi & \casioPi &casioProd & \casioProd &casioRParen & \casioRParen \\casioSin & \casioSin &casioSum & \casioSum &casioTan & \casioTan \\casioX & \casioX &casioY & \casioY &CommaParen & \CommaParen \\Cube & \Cube &CubeParen & \CubeParen &CubeRoot & \CubeRoot \\DegRadGrad & \DegRadGrad &Del & \Del &Divide & \Divide \\divR & \divR &DownArrow & \DownArrow &dydx & \dydx \\eExp & \eExp &Eight & \Eight &Eng & \Eng \\Equal & \Equal &Factorial & \Factorial &Five & \Five \\Four & \Four &Frac & \Frac &FracMult & \FracMult \\Inverse & \Inverse &InverseCos & \InverseCos &InverseParen & \InverseParen \\InverseSin & \InverseSin &InverseTan & \InverseTan &iParen & \iParen \\LeftArrow & \LeftArrow &LineFrac & \LineFrac &logParen & \logParen \\Menu & \Menu &Minus & \Minus &minusParen & \minusParen \\MixedFrac & \MixedFrac &Mminus & \Mminus &Mplus & \Mplus \\nExp & \nExp &Nine & \Nine &nLog & \nLog \\nRoot & \nRoot &nTen & \nTen &One & \One \\Optn & \Optn &Percent & \Percent &Plus & \Plus \\RightArrow & \RightArrow &Sen & \Sen &Setup & \Setup \\Seven & \Seven &Shift & \Shift &Sim & \Sim \\Simp & \Simp &Six & \Six &SquareRoot & \SquareRoot \\Sto & \Sto &switchMixedFrac & \switchMixedFrac &Three & \Three \\Times & \Times &Two & \Two &UnknownA & \UnknownA \\UnknownB & \UnknownB &UpArrow & \UpArrow &xTenx & \xTenx \\Zero & \Zero \end{tabular}
+\end{fonttable}
+\end{document}
