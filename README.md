@@ -3,6 +3,11 @@
 This package provides support for the [Casio ClassWiz](https://edu.casio.com/forteachers/er/fontsets/index.php) font, available from the Casio web site.  The font itself is *not* included in the distribution.
 The package requires compilation with XeLaTeX or LuaLaTeX.
 
+# Installation instructions
+
+ - The package is included in MikTeX and can be installed with the package manager.
+ - The package is not included in TeX Live due to licensing restrictions (because the font itself is not redistributable). You must therefore install the package manually into your local texmf directory.
+
 
 casiofont.sty
 
@@ -16,12 +21,12 @@ The latest version of this license is in
 and version 1.3 or later is part of all distributions of LaTeX
 version 2005/12/01 or later.
 
-This package has the LPPL maintenance status `maintained'.
+This package has the LPPL maintenance status 'maintained'.
 
 The Current Maintainer of this package is Alan Munn
 
 This package consists of the files casiofont.sty and
-documentation files casiofont.tex, casiofont.pdf and README
+documentation files casiofont.tex, casiofont.pdf and README.md
 
 Version 1.0 2018/05/31
 

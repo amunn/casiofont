@@ -20,6 +20,15 @@
 \maketitle
 This package provides support for the \href{https://edu.casio.com/forteachers/er/fontsets/index.php}{Casio ClassWiz} font, available from the Casio web site.  The font itself is \emph{not} included in the distribution.
 The package requires compilation with XeLaTeX or LuaLaTeX.
+\section*{Installation}
+\begin{description}
+\item[MikTeX]{The package is included in MikTeX and should be installed normally using the MikTeX package manager if it is not already installed.}
+\item[TeX Live]{Because TeX Live has much stricter licensing requirements, the package is not included in TeX Live because it provides support for a non-free (in the Free Software sense) font. You must therefore install the package yourself in your local \texttt{texmf} directory.  To do this make two directories (folders): \texttt{texmf/tex/latex/casiofont} and \texttt{texmf/doc/casiofont}. Put \texttt{casiofont.sty} into the \texttt{texmf/tex/latex/casiofont} directory, and \texttt{casiofont.pdf} into the \texttt{texmf/doc/casiofont} directory.}
+\end{description}
+\section*{Support}
+The package is hosted at \href{https://github.com/amunn/casiofont}{GitHub}. I welcome suggestions for better names, since I don't use the calculator myself. 
+\clearpage
+\section*{Character commands (roughly sorted)}
 \begin{fonttable}
 \captionof{table}{Calculator Functions}
 \begin{tabular}{LCLCLC}
@@ -152,7 +161,8 @@ DegRadGrad  &  \DegRadGrad
 
 \captionof{table}{Fractions}
 \begin{tabular}{LCLC}
-Frac  &	 \Frac &FracMult &	 \FracMult 
+Frac  &	 \Frac &
+FracMult &	 \FracMult 
 \end{tabular}
 \end{fonttable}
 
@@ -179,7 +189,8 @@ Nine  &  \Nine
 
 \captionof{table}{Unknown}
 \begin{tabular}{LCLC}
-UnknownA 	& \UnknownA &UnknownB 	 \UnknownB 
+UnknownA 	& \UnknownA &
+UnknownB 	 \UnknownB 
 \end{tabular}
 \end{fonttable}
 
@@ -188,6 +199,94 @@ UnknownA 	& \UnknownA &UnknownB 	 \UnknownB
 \captionof{table}{Alphabetical List}
 
 \begin{tabular}{LCLCLC}
-Abs & \Abs &Alpha & \Alpha &angleParen & \angleParen\\Ans & \Ans &BackArrow & \BackArrow &Calc & \Calc \\casioAbs & \casioAbs &casioAC & \casioAC &casioComma & \casioComma \\casioCos & \casioCos &casioDblParen & \casioDblParen &casioDot & \casioDot \\casioIntegral & \casioIntegral &casioLn & \casioLn &casioLog & \casioLog \\casioLParen & \casioLParen &casioObar & \casioObar &casioOdot & \casioOdot \\casioPi & \casioPi &casioProd & \casioProd &casioRParen & \casioRParen \\casioSin & \casioSin &casioSum & \casioSum &casioTan & \casioTan \\casioX & \casioX &casioY & \casioY &CommaParen & \CommaParen \\Cube & \Cube &CubeParen & \CubeParen &CubeRoot & \CubeRoot \\DegRadGrad & \DegRadGrad &Del & \Del &Divide & \Divide \\divR & \divR &DownArrow & \DownArrow &dydx & \dydx \\eExp & \eExp &Eight & \Eight &Eng & \Eng \\Equal & \Equal &Factorial & \Factorial &Five & \Five \\Four & \Four &Frac & \Frac &FracMult & \FracMult \\Inverse & \Inverse &InverseCos & \InverseCos &InverseParen & \InverseParen \\InverseSin & \InverseSin &InverseTan & \InverseTan &iParen & \iParen \\LeftArrow & \LeftArrow &LineFrac & \LineFrac &logParen & \logParen \\Menu & \Menu &Minus & \Minus &minusParen & \minusParen \\MixedFrac & \MixedFrac &Mminus & \Mminus &Mplus & \Mplus \\nExp & \nExp &Nine & \Nine &nLog & \nLog \\nRoot & \nRoot &nTen & \nTen &One & \One \\Optn & \Optn &Percent & \Percent &Plus & \Plus \\RightArrow & \RightArrow &Sen & \Sen &Setup & \Setup \\Seven & \Seven &Shift & \Shift &Sim & \Sim \\Simp & \Simp &Six & \Six &SquareRoot & \SquareRoot \\Sto & \Sto &switchMixedFrac & \switchMixedFrac &Three & \Three \\Times & \Times &Two & \Two &UnknownA & \UnknownA \\UnknownB & \UnknownB &UpArrow & \UpArrow &xTenx & \xTenx \\Zero & \Zero \end{tabular}
+Abs & \Abs &
+Alpha & \Alpha &
+angleParen & \angleParen\\
+Ans & \Ans &
+BackArrow & \BackArrow &
+Calc & \Calc \\
+casioAbs & \casioAbs &
+casioAC & \casioAC &
+casioComma & \casioComma \\
+casioCos & \casioCos &
+casioDblParen & \casioDblParen &
+casioDot & \casioDot \\
+casioIntegral & \casioIntegral &
+casioLn & \casioLn &
+casioLog & \casioLog \\
+casioLParen & \casioLParen &
+casioObar & \casioObar &
+casioOdot & \casioOdot \\
+casioPi & \casioPi &
+casioProd & \casioProd &
+casioRParen & \casioRParen \\
+casioSin & \casioSin &
+casioSum & \casioSum &
+casioTan & \casioTan \\
+casioX & \casioX &
+casioY & \casioY &
+CommaParen & \CommaParen \\
+Cube & \Cube &
+CubeParen & \CubeParen &
+CubeRoot & \CubeRoot \\
+DegRadGrad & \DegRadGrad &
+Del & \Del &
+Divide & \Divide \\
+divR & \divR &
+DownArrow & \DownArrow &
+dydx & \dydx \\
+eExp & \eExp &
+Eight & \Eight &
+Eng & \Eng \\
+Equal & \Equal &
+Factorial & \Factorial &
+Five & \Five \\
+Four & \Four &
+Frac & \Frac &
+FracMult & \FracMult \\
+Inverse & \Inverse &
+InverseCos & \InverseCos &
+InverseParen & \InverseParen \\
+InverseSin & \InverseSin &
+InverseTan & \InverseTan &
+iParen & \iParen \\
+LeftArrow & \LeftArrow &
+LineFrac & \LineFrac &
+logParen & \logParen \\
+Menu & \Menu &
+Minus & \Minus &
+minusParen & \minusParen \\
+MixedFrac & \MixedFrac &
+Mminus & \Mminus &
+Mplus & \Mplus \\
+nExp & \nExp &
+Nine & \Nine &
+nLog & \nLog \\
+nRoot & \nRoot &
+nTen & \nTen &
+One & \One \\
+Optn & \Optn &
+Percent & \Percent &
+Plus & \Plus \\
+RightArrow & \RightArrow &
+Sen & \Sen &
+Setup & \Setup \\
+Seven & \Seven &
+Shift & \Shift &
+Sim & \Sim \\
+Simp & \Simp &
+Six & \Six &
+SquareRoot & \SquareRoot \\
+Sto & \Sto &
+switchMixedFrac & \switchMixedFrac &
+Three & \Three \\
+Times & \Times &
+Two & \Two &
+UnknownA & \UnknownA \\
+UnknownB & \UnknownB &
+UpArrow & \UpArrow &
+xTenx & \xTenx \\
+Zero & \Zero 
+\end{tabular}
 \end{fonttable}
 \end{document}
