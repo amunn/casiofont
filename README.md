@@ -28,5 +28,5 @@ The Current Maintainer of this package is Alan Munn
 This package consists of the files casiofont.sty and
 documentation files casiofont.tex, casiofont.pdf and README.md
 
-Version 1.0 2018/05/31
+Version 1.1 2018/10/22
 

@@ -19,9 +19,10 @@
 % documentation files casiofont.tex, casiofont.pdf and README
 %
 % Version 1.0 2018/05/31
+% Version 1.1 2018/10/22
 %
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{casiofont}[2018/05/31 v1.0 Casio Calculator Font]
+\ProvidesPackage{casiofont}[2018/10/22 v1.1 Casio Calculator Font]
 \RequirePackage{iftex}
 \ifPDFTeX
  \PackageError{casiofont}{This package requires LuaTeX or XeTeX}{Please use one of these engines to compile your document.}
@@ -37,8 +38,10 @@
 \newcommand*{\RightArrow}{{\normalfont\casio\$}}
 \newcommand*{\Setup}{{\normalfont\casio L}}
 \newcommand*{\Menu}{{\normalfont\casio w}}
-\newcommand*{\UnknownA}{{\normalfont\casio t}}
-\newcommand*{\UnknownB}{{\normalfont\casio |}}
+\newcommand*{\CJKMenu}{{\normalfont\casio t}}% changed 10/22/18
+\let\UnknownA\CJKMenu% for backwards compatibilty
+\newcommand*{\CJKOn}{{\normalfont\casio |}}% changed 10/22/18
+\let\UnknownB\CJKOn% for backwards compatibilty
 \newcommand*{\Optn}{{\normalfont\casio T}}
 \newcommand*{\LineFrac}{{\normalfont\casio `{}}}
 \newcommand*{\Calc}{{\normalfont\casio r}}
